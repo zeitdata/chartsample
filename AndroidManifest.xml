@@ -22,16 +22,6 @@
             </intent-filter>
         </activity>
 
-        <activity android:name=".android.activity.WebViewActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar" >
-            <intent-filter>
-                <data android:scheme="http" android:host="beta.zeitdata.com" android:pathPattern="/m/.*" />
-                <!-- <data android:scheme="http" android:host="192.168.1.2" android:port="8080" android:pathPattern="/m/.*"/>-->
-                <action android:name="android.intent.action.VIEW" />
-                <category android:name="android.intent.category.DEFAULT"/>
-                <category android:name="android.intent.category.BROWSABLE"/>
-            </intent-filter>
-        </activity>       
-        <activity android:name=".android.activity.RegistrationActivity" android:noHistory="true" />
         <activity android:name=".android.activity.LoginActivity" android:noHistory="true" android:windowSoftInputMode="adjustResize" />
 
 
