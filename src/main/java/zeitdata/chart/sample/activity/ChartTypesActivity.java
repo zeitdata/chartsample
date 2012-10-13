@@ -1,4 +1,4 @@
-package com.zeitdata.android.activity;
+package zeitdata.chart.sample.activity;
 
 import android.app.Activity;
 import android.os.Bundle;
