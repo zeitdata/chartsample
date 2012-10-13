@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.zeitdata"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk android:minSdkVersion="8" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+
+    <application android:debuggable="true" android:icon="@drawable/zeitdata_mark" android:label="@string/app_name" android:theme="@android:style/Theme.NoTitleBar" >
+
+        <!-- activities -->
+        <activity android:name=".android.activity.WelcomeActivity" android:label="@string/app_name" android:noHistory="true" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".android.activity.WebViewActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar" >
+            <intent-filter>
+                <data android:scheme="http" android:host="beta.zeitdata.com" android:pathPattern="/m/.*" />
+                <!-- <data android:scheme="http" android:host="192.168.1.2" android:port="8080" android:pathPattern="/m/.*"/>-->
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+            </intent-filter>
+        </activity>       
+        <activity android:name=".android.activity.RegistrationActivity" android:noHistory="true" />
+        <activity android:name=".android.activity.LoginActivity" android:noHistory="true" android:windowSoftInputMode="adjustResize" />
+
+
+
+        <!-- services 
+        <service android:name=".android.service.DropletQueueingService" android:process=":remote" >
+            <intent-filter>
+                <action android:name="com.zeitdata.android.service.DropletQueueingService" />
+            </intent-filter>
+        </service>
+	-->
+
+        <!-- receivers
+        <receiver android:name=".android.receiver.DropletQueueingServiceReceiver" >
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+                <action android:name="android.intent.action.ACTION_SCREEN_ON" />
+            </intent-filter>
+        </receiver>
+	-->
+    </application>
+
+</manifest>
