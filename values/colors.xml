@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="blue_gradient_dark">#00AEEE</color>
+    <color name="blue_gradient_light">#74CEF0</color>
+    <color name="blue_stroke">#0088CE</color>
+    <color name="blue_shadow">#23A5D5</color>
+    <color name="green_gradient_dark">#21DA85</color>
+    <color name="green_gradient_light">#8DECC1</color>
+    <color name="green_stroke">#EF9C5B</color>
+    <color name="green_shadow">#01654F</color>
+    <color name="light_gray">#CCCCCC</color>
+    <color name="location_tracking_status_on">#21B7EE</color>
+    <color name="location_tracking_status_off">#21B7EE</color>
+    <color name="login_button_shadow_layer">#3484A2</color>
+    <color name="blue_basic_background">#20B2EB</color>
+</resources>
