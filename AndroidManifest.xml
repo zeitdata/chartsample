@@ -23,16 +23,21 @@
         </activity>
 
         <activity android:name=".android.activity.LoginActivity" android:noHistory="true" android:windowSoftInputMode="adjustResize" />
-
-
-
-        <!-- services 
-        <service android:name=".android.service.DropletQueueingService" android:process=":remote" >
+        <activity android:name=".android.activity.ChartTypesActivity">
             <intent-filter>
-                <action android:name="com.zeitdata.android.service.DropletQueueingService" />
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
-        </service>
-	-->
+        </activity>
+
+
+        <!-- services
+          <service android:name=".android.service.DropletQueueingService" android:process=":remote" >
+              <intent-filter>
+                  <action android:name="com.zeitdata.android.service.DropletQueueingService" />
+              </intent-filter>
+          </service>
+      -->
 
         <!-- receivers
         <receiver android:name=".android.receiver.DropletQueueingServiceReceiver" >
