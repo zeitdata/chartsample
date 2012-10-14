@@ -2,7 +2,7 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
 	<modelVersion>4.0.0</modelVersion>
-	<groupId>com.zeitdata</groupId>
+	<groupId>zeitdata.chart</groupId>
 	<artifactId>chartsample</artifactId>
 	<version>1.0-SNAPSHOT</version>
 	<packaging>apk</packaging>
@@ -10,13 +10,13 @@
 
 	<properties>
 		<amazonaws.version>1.0.4</amazonaws.version>
-		<gson.version>2.0</gson.version>
-		<guava.version>10.0.1</guava.version>
+
+
 		<guice.version>3.0</guice.version>
 		<roboguice.version>2.0b4</roboguice.version>
 		<javax.inject.version>1</javax.inject.version>
 		<android.version>2.2.1</android.version>
-        </properties>
+    </properties>
 
 	<dependencies>
 		<dependency>
@@ -26,21 +26,12 @@
 			<scope>provided</scope>
 		</dependency>
 		<dependency>
-			<groupId>com.google.code.gson</groupId>
-			<artifactId>gson</artifactId>
-			<version>${gson.version}</version>
-		</dependency>
-		<dependency>
 			<groupId>com.google.inject</groupId>
 			<artifactId>guice</artifactId>
 			<version>${guice.version}</version>
 			<classifier>no_aop</classifier>
 		</dependency>
-        <dependency>
-            <groupId>com.google.guava</groupId>
-            <artifactId>guava</artifactId>
-            <version>${guava.version}</version>
-        </dependency>
+
 		<!-- 
 		<dependency>
 			<groupId>javax.inject</groupId>
@@ -70,7 +61,6 @@
 					<sdk>
 						<platform>8</platform>
 					</sdk>
-					<deleteConflictingFiles>true</deleteConflictingFiles>
 					<undeployBeforeDeploy>true</undeployBeforeDeploy>
 				</configuration>
 				<extensions>true</extensions>

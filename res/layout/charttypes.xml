@@ -15,7 +15,6 @@
             android:paddingBottom="0dp"
             android:paddingLeft="85dp"
             android:paddingRight="85dp"
-            android:contentDescription="@string/logo"
             android:src="@drawable/zd_logo_lg"
             android:background="#20B2EB"/>
 
