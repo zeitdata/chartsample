@@ -1,12 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="hello">Hello World, ZeitdataActivity!</string>
+    <string name="hello">Hello</string>
     <string name="app_name">Zeitdata</string>
     <string name="logo">ZEITdata</string>
     <string name="email_address">Email Address</string>
     <string name="password">Password</string>
     <string name="sign_in">Sign In</string>
-    <string name="forgot_password">Tap here to reset password</string>
     <string name="click_here">Click here</string>
     <string name="forgot_password_url">http://beta.zeitdata.com/m/resetpw/email</string>
     <string name="forgot_pw_alert_title">Login Failed</string>

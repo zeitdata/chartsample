@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical"
+              android:background="#EEEEEE">
+
+
+    <ImageView
+            android:id="@+id/logo"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:paddingTop="5dp"
+            android:paddingBottom="0dp"
+            android:paddingLeft="85dp"
+            android:paddingRight="85dp"
+            android:contentDescription="@string/logo"
+            android:src="@drawable/zd_logo_lg"
+            android:background="#20B2EB"/>
+
+    <TextView
+            android:id="@+id/reportingHeaderLabel"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:text="CHARTS"
+            android:textColor="#FFFFFF"
+            android:paddingBottom="15sp"
+            android:paddingTop="0sp"
+            android:paddingLeft="0sp"
+            android:paddingRight="90sp"
+            android:textSize="14sp"
+            android:typeface="serif"
+            android:background="#20B2EB"/>
+
+    <!--
+    <TextView
+        android:id="@+id/reportingHeaderLabel"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Examples"
+        android:textColor="#FFFFFF"
+        android:paddingBottom="15sp"
+        android:paddingTop="10sp"
+        android:paddingLeft="10sp"
+        android:paddingRight="10sp"
+        android:textStyle="bold"
+        android:textSize="14sp"
+        android:background="#20B2EB"/>
+    -->
+
+
+    <TextView
+        android:id="@+id/lineChartLabel"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="20dp"
+        android:gravity="center"
+        android:text="Line Chart"
+        android:textSize="12sp"
+        android:textColor="#000000"/>
+
+
+    <ImageButton
+        android:id="@+id/lineChartButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center"
+        android:clickable="true"
+        android:cropToPadding="false"
+        android:src="@drawable/zdcharts_xyline_small"/>
+
+    <TextView
+            android:id="@+id/scatterChartLabel"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="20dp"
+            android:gravity="center"
+            android:text="Scatter Chart"
+            android:textSize="12sp"
+            android:textColor="#000000"/>
+
+    <ImageButton
+            android:id="@+id/scatterChartButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center"
+            android:clickable="true"
+            android:cropToPadding="false"
+            android:src="@drawable/zdcharts_xyline_small"/>
+
+    <TextView
+            android:id="@+id/barChartLabel"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="20dp"
+            android:gravity="center"
+            android:text="Bar Chart"
+            android:textSize="12sp"
+            android:textColor="#000000"/>
+
+    <ImageButton
+            android:id="@+id/barChartButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center"
+            android:clickable="true"
+            android:cropToPadding="false"
+            android:src="@drawable/zdcharts_xyline_small"/>
+
+    <TextView
+            android:id="@+id/pieChartLabel"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="20dp"
+            android:gravity="center"
+            android:text="Pie Chart"
+            android:textSize="12sp"
+            android:textColor="#000000"/>
+
+    <ImageButton
+            android:id="@+id/pieChartButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center"
+            android:clickable="true"
+            android:cropToPadding="false"
+            android:src="@drawable/zdcharts_xyline_small"/>
+
+
+</LinearLayout>
