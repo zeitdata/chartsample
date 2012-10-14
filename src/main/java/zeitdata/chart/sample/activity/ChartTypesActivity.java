@@ -1,16 +1,16 @@
 package zeitdata.chart.sample.activity;
 
-import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageButton;
+import roboguice.activity.RoboActivity;
 import roboguice.inject.ContentView;
 import roboguice.inject.InjectView;
 import zeitdata.chart.R;
 
 @ContentView(R.layout.charttypes)
-public class ChartTypesActivity extends Activity {
+public class ChartTypesActivity extends RoboActivity {
 
     @InjectView(R.id.lineChartButton)
     private ImageButton lineChartButton;

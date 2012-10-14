@@ -18,6 +18,8 @@
             </intent-filter>
         </activity>
 
+        <activity android:name="zeitdata.chart.sample.activity.LineChartActivity" />
+
 
         <!-- services
           <service android:name=".android.service.DropletQueueingService" android:process=":remote" >
