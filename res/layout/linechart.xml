@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:zeitdata="http://schemas.android.com/apk/res/zeitdata.chart"
               android:layout_width="fill_parent"
               android:layout_height="fill_parent">
     <TextView
@@ -9,5 +10,114 @@
         android:layout_width="match_parent"
         android:text="line chart to go in here... "
     />
+
+    <!--
+    <zeitdata.chart.view.ScatterChart
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        zeitdata:backgroundColor="#FFFFFF"
+        zeitdata:chartLabel="chart label"
+        zeitdata:xAxisLabel="x-axis"
+        zeitdata:yAxisLabel="y-axis"
+        zeitdata:data="{ &quot;series&quot; : [ { &quot;color&quot; : -65536,
+        &quot;isDate&quot; : false,
+        &quot;points&quot; : [ { &quot;isDate&quot; : false,
+              &quot;xNumber&quot; : 2012.0,
+              &quot;yNumber&quot; : 2000.0
+            },
+            { &quot;isDate&quot; : false,
+              &quot;xNumber&quot; : 2011.0,
+              &quot;yNumber&quot; : 2000.0
+            },
+            { &quot;quot;isDate&quot; : false,
+              &quot;xNumber&quot; : 2010.0,
+              &quot;yNumber&quot; : 2000.0
+            },
+            { &quot;isDate&quot; : false,
+              &quot;xNumber&quot; : 2009.0,
+              &quot;yNumber&quot; : 2000.0
+            },
+            { &quot;isDate&quot; : false,
+              &quot;xNumber&quot; : 2007.0,
+              &quot;yNumber&quot; : 300.0
+            },
+            { &quot;isDate&quot; : false,
+              &quot;xNumber&quot; : 2006.0,
+              &quot;yNumber&quot; : 2000.0
+            },
+            { &quot;isDate&quot; : false,
+              &quot;xNumber&quot; : 2008.0,
+              &quot;yNumber&quot; : 2000.0
+            }
+          ],
+        &quot;title&quot; : &quot;Asthma Attacks&quot;
+      },
+      { &quot;color&quot; : -7829368,
+        &quot;isDate&quot; : false,
+        &quot;points&quot; : [ { &quot;isDate&quot; : false,
+              &quot;xNumber&quot; : 2007.0,
+              &quot;yNumber&quot; : 100.0
+            },
+            { &quot;isDate&quot; : false,
+              &quot;xNumber&quot; : 2006.0,
+              &quot;yNumber&quot; : 23.0
+            },
+            { &quot;isDate&quot; : false,
+              &quot;xNumber&quot; : 2012.0,
+              &quot;yNumber&quot; : 88.0
+            },
+            { &quot;isDate&quot; : false,
+              &quot;xNumber&quot; : 2010.0,
+              &quot;yNumber&quot; : 5.0
+            },
+            { &quot;isDate&quot; : false,
+              &quot;xNumber&quot; : 2011.0,
+              &quot;yNumber&quot; : 33.0
+            },
+            { &quot;isDate&quot; : false,
+              &quot;xNumber&quot; : 2009.0,
+              &quot;yNumber&quot; : 8.0
+            },
+            { &quot;isDate&quot; : false,
+              &quot;xNumber&quot; : 2008.0,
+              &quot;yNumber&quot; : 9.0
+            }
+          ],
+        &quot;title&quot; : &quot;Breast cancer&quot;
+      },
+      { &quot;color&quot; : -16711936,
+        &quot;isDate&quot; : false,
+        &quot;points&quot; : [ { &quot;isDate&quot; : false,
+              &quot;xNumber&quot; : 2011.0,
+              &quot;yNumber&quot; : 1.0
+            },
+            { &quot;isDate&quot; : false,
+              &quot;xNumber&quot; : 2009.0,
+              &quot;yNumber&quot; : 3.0
+            },
+            { &quot;isDate&quot; : false,
+              &quot;xNumber&quot; : 2008.0,
+              &quot;yNumber&quot; : 10.0
+            },
+            { &quot;isDate&quot; : false,
+              &quot;xNumber&quot; : 2007.0,
+              &quot;yNumber&quot; : 0.0
+            },
+            { &quot;isDate&quot; : false,
+              &quot;xNumber&quot; : 2006.0,
+              &quot;yNumber&quot; : 0.0
+            },
+            { &quot;isDate&quot; : false,
+              &quot;xNumber&quot; : 2010.0,
+              &quot;yNumber&quot; : 4.0
+            }
+          ],
+        &quot;title&quot; : &quot;Penis Reduction surgeries&quot;
+      }
+    ] }"
+
+    />
+    -->
 
 </LinearLayout>
