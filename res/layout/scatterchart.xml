@@ -5,23 +5,23 @@
               android:layout_width="fill_parent"
               android:layout_height="fill_parent">
     <TextView
-        android:id="@+id/lineChartHeader"
-        android:layout_height="wrap_content"
-        android:layout_width="match_parent"
-        android:text="line chart to go in here... "
-    />
+            android:id="@+id/lineChartHeader"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:text="scatter chart to go in here... "
+            />
 
 
-    <zeitdata.chart.view.LineChart
-        android:id="@+id/scatterChart"
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:padding="5dp"
-        zeitdata:backgroundColor="#FFFFFF"
-        zeitdata:chartLabel="chart label"
-        zeitdata:xAxisLabel="x-axis"
-        zeitdata:yAxisLabel="y-axis"
-        zeitdata:data="{ &quot;series&quot; : [ { &quot;color&quot; : -65536,
+    <zeitdata.chart.view.ScatterChart
+            android:id="@+id/scatterChart"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            zeitdata:backgroundColor="#FFFFFF"
+            zeitdata:chartLabel="chart label"
+            zeitdata:xAxisLabel="x-axis"
+            zeitdata:yAxisLabel="y-axis"
+            zeitdata:data="{ &quot;series&quot; : [ { &quot;color&quot; : -65536,
         &quot;isDate&quot; : false,
         &quot;points&quot; : [ { &quot;isDate&quot; : false,
               &quot;xNumber&quot; : 2012.0,
@@ -118,7 +118,7 @@
       }
     ] }"
 
-    />
+            />
 
 
 </LinearLayout>

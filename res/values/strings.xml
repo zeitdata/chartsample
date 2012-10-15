@@ -1,23 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="hello">Hello</string>
-    <string name="app_name">Charts</string>
+    <string name="app_name">Charts New</string>
     <string name="logo">ZEITdata</string>
     <string name="email_address">Email Address</string>
-    <string name="password">Password</string>
     <string name="sign_in">Sign In</string>
     <string name="click_here">Click here</string>
-    <string name="forgot_password_url">http://beta.zeitdata.com/m/resetpw/email</string>
-    <string name="forgot_pw_alert_title">Login Failed</string>
-    <string name="forgot_pw_alert_message">Incorrect username and/or password.  Please try again.</string>
     <string name="forgot_pw_alert_button">OK</string>
     <string name="connection_not_available_title">Connection not available</string>
-    <string name="connection_not_available_message">Connection to the internet is required to Sign In.  Please enable and try again.</string>
     <string name="connection_not_available_button">OK</string>
-    <string name="location_tracking_title">Location Tracking</string>
-    <string name="location_tracking_status">Status: </string>
-    <string name="location_tracking_status_on"> ON</string>
-    <string name="location_tracking_status_off"> OFF</string>
-    <string name="location_tracking_instructions">Zeitdata can track your location using GPS in order to display data in your stream feed relating to your location through time.  If you prefer to disable this functionality, you can turn it off here.</string>
     <string name="registrationURL">http://beta.zeitdata.com/m/signup/email</string>
 </resources>
