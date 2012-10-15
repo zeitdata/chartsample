@@ -2,16 +2,18 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="zeitdata.chart.sample"
     android:versionCode="1"
-    android:versionName="1.0" >
+    android:versionName="1.0-SNAPSHOT" >
 
+    <!--
     <uses-sdk android:minSdkVersion="8" />
+    -->
 
-    <uses-permission android:name="android.permission.INTERNET" />
+
 
     <application android:debuggable="true" android:icon="@drawable/zeitdata_mark" android:label="@string/app_name" android:theme="@android:style/Theme.NoTitleBar" >
 
         <!-- activities -->
-        <activity android:name="zeitdata.chart.sample.activity.ChartTypesActivity" android:label="@string/app_name" android:noHistory="true" >
+        <activity android:name="zeitdata.chart.sample.activity.ChartTypesActivity" android:label="@string/app_name"  >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />

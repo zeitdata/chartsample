@@ -1,9 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout
+              android:id="@+id/scatterLayout"
+              xmlns:android="http://schemas.android.com/apk/res/android"
               xmlns:zeitdata="http://schemas.android.com/apk/res/zeitdata.chart.sample"
               android:layout_width="fill_parent"
-              android:layout_height="fill_parent">
+              android:layout_height="fill_parent"
+              android:orientation="vertical"
+              android:background="@color/blue_basic_background">
+
+
     <TextView
             android:id="@+id/lineChartHeader"
             android:layout_height="wrap_content"
@@ -12,12 +18,23 @@
             />
 
 
+
+
+    <LinearLayout
+            android:id="@+id/innerScatterLayout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/light_gray">
+
+
+
+
     <zeitdata.chart.view.ScatterChart
             android:id="@+id/scatterChart"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:padding="5dp"
-            zeitdata:backgroundColor="#FFFFFF"
+            zeitdata:backgroundColor="@color/light_gray"
             zeitdata:chartLabel="chart label"
             zeitdata:xAxisLabel="x-axis"
             zeitdata:yAxisLabel="y-axis"
@@ -120,5 +137,6 @@
 
             />
 
+    </LinearLayout>
 
 </LinearLayout>

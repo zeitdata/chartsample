@@ -1,6 +1,8 @@
 package zeitdata.chart.sample.activity;
 
 import android.os.Bundle;
+import android.widget.LinearLayout;
+import android.widget.TextView;
 import roboguice.activity.RoboActivity;
 import roboguice.inject.ContentView;
 import roboguice.inject.InjectView;
@@ -20,11 +22,31 @@ public class ScatterChartActivity extends RoboActivity{
     @InjectView(R.id.scatterChart)
     ScatterChart scatterChart;
 
+    @InjectView(R.id.scatterLayout)
+    LinearLayout scatterLayout;
+
 
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         scatterChart.getChartLabel();
-        scatterChart.setTmp();
+//        scatterChart.setTmp();
+//
+//        ScatterChart programmedChart = new ScatterChart(this);
+//        programmedChart.setBackgroundColor(Color.WHITE);
+//        programmedChart.setPadding(5,5,5,5);
+//        programmedChart.setXAxisLabel("x-axisssss");
+//        programmedChart.setYAxisLabel("y-axis yyyy");
+//        programmedChart.setChartLabel("programmed!");
+////        programmedChart.setData();
+//
+//        scatterLayout.addView(programmedChart);
+
+
+        TextView tv = new TextView(this);
+        tv.setText("WTF????");
+
+        scatterLayout.addView(tv);
+
 
     }
 
