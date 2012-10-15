@@ -1,0 +1,30 @@
+<resources>
+    <declare-styleable name="zeitdata.chart.view.XYChart">
+        <attr name="axisColor" format="color"/>
+        <attr name="backgroundColor" format="color"/>
+        <attr name="chartLabel" format="string"/>
+        <attr name="chartLabelColor" format="color"/>
+        <attr name="chartLabelFontSize" format="integer"/>
+        <attr name="xAxisLabel" format="string"/>
+        <attr name="xAxisLabelColor" format="color"/>
+        <attr name="xAxisLabelFontSize" format="integer"/>
+        <attr name="yAxisLabel" format="string"/>
+        <attr name="yAxisLabelColor" format="color"/>
+        <attr name="yAxisLabelFontSize" format="integer"/>
+        <attr name="data" format="string"/>
+
+
+        <attr name="gridColor" format="color"/>
+        <attr name="horizontalGridCount" format="integer"/>
+        <attr name="verticalGridCount" format="integer"/>
+        <attr name="gridWidth" format="integer"/>
+        <attr name="gridHeight" format="integer"/>
+        <attr name="gridStyle" format="enum">
+            <enum name="DOTTED" value="1"/>
+            <enum name="DASHED" value="2"/>
+            <enum name="SOLID" value="3"/>
+            <enum name="NONE" value="0"/>
+        </attr>
+
+    </declare-styleable>
+</resources>
