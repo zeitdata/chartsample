@@ -10,133 +10,82 @@
               android:background="@color/blue_basic_background">
 
 
+    <ImageView
+            android:id="@+id/logo"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:paddingTop="5dp"
+            android:paddingBottom="0dp"
+            android:paddingLeft="85dp"
+            android:paddingRight="85dp"
+            android:src="@drawable/zd_logo_lg"
+            android:background="#20B2EB"/>
+
+    <TextView
+            android:id="@+id/reportingHeaderLabel"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:text="CHARTS"
+            android:textColor="#FFFFFF"
+            android:paddingBottom="5sp"
+            android:paddingTop="0sp"
+            android:paddingLeft="0sp"
+            android:paddingRight="90sp"
+            android:textSize="14sp"
+            android:typeface="serif"
+            android:background="#20B2EB"/>
+
     <TextView
             android:id="@+id/lineChartHeader"
             android:layout_height="wrap_content"
             android:layout_width="match_parent"
-            android:text="scatter chart to go in here... "
-            />
-
-
+            android:padding="5dp"
+            android:gravity="center"
+            android:textSize="14sp"
+            android:textColor="#FFFFFF"
+            android:text="Scatter Chart"/>
 
 
     <LinearLayout
-            android:id="@+id/innerScatterLayout"
-            android:layout_width="fill_parent"
+            android:id="@+id/scatterLayoutInner"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:background="@color/light_gray">
+            android:orientation="horizontal"
+            android:background="@color/blue_basic_background">
+
+        <zeitdata.chart.view.ScatterChart
+                android:id="@+id/scatterChartFullyFromXml"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                zeitdata:backgroundColor="@color/light_gray"
+                zeitdata:chartLabel="Asthma Attacks"
+                zeitdata:xAxisLabel="Week of Year"
+                zeitdata:yAxisLabel="Number of Attacks"
+                zeitdata:numericDataPrototype="Asthma Attacks=[(3,40),(4,12),(6,69),(20,4),(42,18)]"
+         />
 
 
-
-
-    <zeitdata.chart.view.ScatterChart
-            android:id="@+id/scatterChart"
-            android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
-            android:padding="5dp"
-            zeitdata:backgroundColor="@color/light_gray"
-            zeitdata:chartLabel="chart label"
-            zeitdata:xAxisLabel="x-axis"
-            zeitdata:yAxisLabel="y-axis"
-            zeitdata:data="{ &quot;series&quot; : [ { &quot;color&quot; : -65536,
-        &quot;isDate&quot; : false,
-        &quot;points&quot; : [ { &quot;isDate&quot; : false,
-              &quot;xNumber&quot; : 2012.0,
-              &quot;yNumber&quot; : 2000.0
-            },
-            { &quot;isDate&quot; : false,
-              &quot;xNumber&quot; : 2011.0,
-              &quot;yNumber&quot; : 2000.0
-            },
-            { &quot;quot;isDate&quot; : false,
-              &quot;xNumber&quot; : 2010.0,
-              &quot;yNumber&quot; : 2000.0
-            },
-            { &quot;isDate&quot; : false,
-              &quot;xNumber&quot; : 2009.0,
-              &quot;yNumber&quot; : 2000.0
-            },
-            { &quot;isDate&quot; : false,
-              &quot;xNumber&quot; : 2007.0,
-              &quot;yNumber&quot; : 300.0
-            },
-            { &quot;isDate&quot; : false,
-              &quot;xNumber&quot; : 2006.0,
-              &quot;yNumber&quot; : 2000.0
-            },
-            { &quot;isDate&quot; : false,
-              &quot;xNumber&quot; : 2008.0,
-              &quot;yNumber&quot; : 2000.0
-            }
-          ],
-        &quot;title&quot; : &quot;Asthma Attacks&quot;
-      },
-      { &quot;color&quot; : -7829368,
-        &quot;isDate&quot; : false,
-        &quot;points&quot; : [ { &quot;isDate&quot; : false,
-              &quot;xNumber&quot; : 2007.0,
-              &quot;yNumber&quot; : 100.0
-            },
-            { &quot;isDate&quot; : false,
-              &quot;xNumber&quot; : 2006.0,
-              &quot;yNumber&quot; : 23.0
-            },
-            { &quot;isDate&quot; : false,
-              &quot;xNumber&quot; : 2012.0,
-              &quot;yNumber&quot; : 88.0
-            },
-            { &quot;isDate&quot; : false,
-              &quot;xNumber&quot; : 2010.0,
-              &quot;yNumber&quot; : 5.0
-            },
-            { &quot;isDate&quot; : false,
-              &quot;xNumber&quot; : 2011.0,
-              &quot;yNumber&quot; : 33.0
-            },
-            { &quot;isDate&quot; : false,
-              &quot;xNumber&quot; : 2009.0,
-              &quot;yNumber&quot; : 8.0
-            },
-            { &quot;isDate&quot; : false,
-              &quot;xNumber&quot; : 2008.0,
-              &quot;yNumber&quot; : 9.0
-            }
-          ],
-        &quot;title&quot; : &quot;Breast cancer&quot;
-      },
-      { &quot;color&quot; : -16711936,
-        &quot;isDate&quot; : false,
-        &quot;points&quot; : [ { &quot;isDate&quot; : false,
-              &quot;xNumber&quot; : 2011.0,
-              &quot;yNumber&quot; : 1.0
-            },
-            { &quot;isDate&quot; : false,
-              &quot;xNumber&quot; : 2009.0,
-              &quot;yNumber&quot; : 3.0
-            },
-            { &quot;isDate&quot; : false,
-              &quot;xNumber&quot; : 2008.0,
-              &quot;yNumber&quot; : 10.0
-            },
-            { &quot;isDate&quot; : false,
-              &quot;xNumber&quot; : 2007.0,
-              &quot;yNumber&quot; : 0.0
-            },
-            { &quot;isDate&quot; : false,
-              &quot;xNumber&quot; : 2006.0,
-              &quot;yNumber&quot; : 0.0
-            },
-            { &quot;isDate&quot; : false,
-              &quot;xNumber&quot; : 2010.0,
-              &quot;yNumber&quot; : 4.0
-            }
-          ],
-        &quot;title&quot; : &quot;Penis Reduction surgeries&quot;
-      }
-    ] }"
-
-            />
+        <zeitdata.chart.view.ScatterChart
+                android:id="@+id/scatterChartDynamicData"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                zeitdata:backgroundColor="@color/light_gray"
+                zeitdata:chartLabel="Magical Creature Sightings"
+                zeitdata:xAxisLabel="Year"
+                zeitdata:yAxisLabel="Number of Sightings"
+        />
 
     </LinearLayout>
+
+    <TextView
+        android:layout_height="wrap_content"
+        android:layout_width="fill_parent"
+        android:text="Ship it"
+
+    />
 
 </LinearLayout>

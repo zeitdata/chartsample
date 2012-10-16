@@ -5,14 +5,15 @@
         <attr name="chartLabel" format="string"/>
         <attr name="chartLabelColor" format="color"/>
         <attr name="chartLabelFontSize" format="integer"/>
+        <attr name="gridLabelColor" format="color"/>
+        <attr name="gridLineColor" format="color"/>
         <attr name="xAxisLabel" format="string"/>
         <attr name="xAxisLabelColor" format="color"/>
         <attr name="xAxisLabelFontSize" format="integer"/>
         <attr name="yAxisLabel" format="string"/>
         <attr name="yAxisLabelColor" format="color"/>
         <attr name="yAxisLabelFontSize" format="integer"/>
-        <attr name="data" format="string"/>
-
+        <attr name="numericDataPrototype" format="string"/>
 
         <attr name="gridColor" format="color"/>
         <attr name="horizontalGridCount" format="integer"/>

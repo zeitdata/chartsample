@@ -33,23 +33,6 @@
             android:typeface="serif"
             android:background="#20B2EB"/>
 
-    <!--
-    <TextView
-        android:id="@+id/reportingHeaderLabel"
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:gravity="center"
-        android:text="Examples"
-        android:textColor="#FFFFFF"
-        android:paddingBottom="15sp"
-        android:paddingTop="10sp"
-        android:paddingLeft="10sp"
-        android:paddingRight="10sp"
-        android:textStyle="bold"
-        android:textSize="14sp"
-        android:background="#20B2EB"/>
-    -->
-
 
     <TextView
         android:id="@+id/lineChartLabel"
