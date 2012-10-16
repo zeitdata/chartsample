@@ -5,6 +5,7 @@
               xmlns:zeitdata="http://schemas.android.com/apk/res/zeitdata.chart.sample"
               android:layout_width="fill_parent"
               android:layout_height="fill_parent"
+              android:background="#FFFFFF"
               android:orientation="vertical">
 
 
@@ -35,27 +36,25 @@
             android:typeface="serif"
             android:background="#20B2EB"/>
 
+    <!--
+    <Button
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="Back to All Chart Types"/>
+    -->
 
 
-    <LinearLayout
-            android:id="@+id/scatterStaticLayoutInner"
+    <zeitdata.chart.view.ScatterChart
+            android:id="@+id/scatterChartStatic"
             android:layout_width="fill_parent"
-            android:layout_height="fill_parent"
-            android:orientation="vertical"
-            android:background="@color/blue_basic_background">
-
-        <zeitdata.chart.view.ScatterChart
-                android:id="@+id/scatterChartStatic"
-                android:layout_width="fill_parent"
-                android:layout_height="fill_parent"
-                android:padding="5dp"
-                zeitdata:backgroundColor="@color/light_gray"
-                zeitdata:chartLabel="Asthma Attacks (Scatter Chart)"
-                zeitdata:xAxisLabel="Week of Year"
-                zeitdata:yAxisLabel="Number of Attacks"
-                zeitdata:numericDataPrototype="Asthma Attacks=[(3,40),(4,12),(6,69),(20,4),(42,18)]"
-                />
-    </LinearLayout>
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            zeitdata:backgroundColor="@color/light_gray"
+            zeitdata:chartLabel="Asthma Attacks (Scatter Chart)"
+            zeitdata:xAxisLabel="Week of Year"
+            zeitdata:yAxisLabel="Number of Attacks"
+            zeitdata:numericDataPrototype="Asthma Attacks=[(3,40),(4,12),(6,69),(20,4),(42,18)]"
+    />
 
     <TextView
             android:layout_height="wrap_content"
@@ -65,31 +64,15 @@
     />
 
 
-    <LinearLayout
-            android:id="@+id/scatterDynamicLayoutInner"
+    <zeitdata.chart.view.ScatterChart
+            android:id="@+id/scatterChartDynamicData"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical"
-            android:background="@color/blue_basic_background">
-
-        <zeitdata.chart.view.ScatterChart
-                android:id="@+id/scatterChartDynamicData"
-                android:layout_width="fill_parent"
-                android:layout_height="wrap_content"
-                android:padding="5dp"
-                zeitdata:backgroundColor="@color/light_gray"
-                zeitdata:chartLabel="Creature Sightings (Scatter Chart)"
-                zeitdata:xAxisLabel="Year"
-                zeitdata:yAxisLabel="Number of Sightings"
-        />
-    </LinearLayout>
-
-
-    <TextView
-            android:layout_height="wrap_content"
-            android:layout_width="fill_parent"
-            android:text="Ship it"
-
-            />
+            android:padding="5dp"
+            zeitdata:backgroundColor="@color/light_gray"
+            zeitdata:chartLabel="Creature Sightings (Scatter Chart)"
+            zeitdata:xAxisLabel="Year"
+            zeitdata:yAxisLabel="Number of Sightings"
+    />
 
 </LinearLayout>
