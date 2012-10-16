@@ -1,13 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 
-<LinearLayout
-              android:id="@+id/scatterLayout"
+<LinearLayout android:id="@+id/scatterLayout"
               xmlns:android="http://schemas.android.com/apk/res/android"
               xmlns:zeitdata="http://schemas.android.com/apk/res/zeitdata.chart.sample"
               android:layout_width="fill_parent"
               android:layout_height="fill_parent"
-              android:orientation="vertical"
-              android:background="@color/blue_basic_background">
+              android:orientation="vertical">
 
 
     <ImageView
@@ -36,16 +34,6 @@
             android:textSize="14sp"
             android:typeface="serif"
             android:background="#20B2EB"/>
-
-    <TextView
-            android:id="@+id/lineChartHeader"
-            android:layout_height="wrap_content"
-            android:layout_width="match_parent"
-            android:padding="5dp"
-            android:gravity="center"
-            android:textSize="14sp"
-            android:textColor="#FFFFFF"
-            android:text="Scatter Chart"/>
 
 
     <LinearLayout
