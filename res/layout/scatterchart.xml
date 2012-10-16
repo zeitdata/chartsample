@@ -36,25 +36,41 @@
             android:background="#20B2EB"/>
 
 
+
     <LinearLayout
-            android:id="@+id/scatterLayoutInner"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"
+            android:id="@+id/scatterStaticLayoutInner"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical"
             android:background="@color/blue_basic_background">
 
         <zeitdata.chart.view.ScatterChart
-                android:id="@+id/scatterChartFullyFromXml"
+                android:id="@+id/scatterChartStatic"
                 android:layout_width="fill_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="fill_parent"
                 android:padding="5dp"
                 zeitdata:backgroundColor="@color/light_gray"
-                zeitdata:chartLabel="Asthma Attacks"
+                zeitdata:chartLabel="Asthma Attacks (Scatter Chart)"
                 zeitdata:xAxisLabel="Week of Year"
                 zeitdata:yAxisLabel="Number of Attacks"
                 zeitdata:numericDataPrototype="Asthma Attacks=[(3,40),(4,12),(6,69),(20,4),(42,18)]"
-         />
+                />
+    </LinearLayout>
 
+    <TextView
+            android:layout_height="wrap_content"
+            android:layout_width="fill_parent"
+            android:text="---nice description  text-----"
+            android:paddingBottom="10dp"
+    />
+
+
+    <LinearLayout
+            android:id="@+id/scatterDynamicLayoutInner"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@color/blue_basic_background">
 
         <zeitdata.chart.view.ScatterChart
                 android:id="@+id/scatterChartDynamicData"
@@ -62,18 +78,18 @@
                 android:layout_height="wrap_content"
                 android:padding="5dp"
                 zeitdata:backgroundColor="@color/light_gray"
-                zeitdata:chartLabel="Magical Creature Sightings"
+                zeitdata:chartLabel="Creature Sightings (Scatter Chart)"
                 zeitdata:xAxisLabel="Year"
                 zeitdata:yAxisLabel="Number of Sightings"
         />
-
     </LinearLayout>
 
-    <TextView
-        android:layout_height="wrap_content"
-        android:layout_width="fill_parent"
-        android:text="Ship it"
 
-    />
+    <TextView
+            android:layout_height="wrap_content"
+            android:layout_width="fill_parent"
+            android:text="Ship it"
+
+            />
 
 </LinearLayout>
