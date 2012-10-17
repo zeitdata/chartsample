@@ -1,4 +1,4 @@
-package zeitdata.chart.sample.activity;
+package zeitdata.charts.sample.activity;
 
 import android.graphics.Color;
 import android.os.Bundle;

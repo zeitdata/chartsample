@@ -1,4 +1,4 @@
-package zeitdata.chart.sample;
+package zeitdata.charts.sample;
 
 
 import com.google.inject.AbstractModule;

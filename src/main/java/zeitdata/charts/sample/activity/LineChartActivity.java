@@ -1,4 +1,4 @@
-package zeitdata.chart.sample.activity;
+package zeitdata.charts.sample.activity;
 
 import android.os.Bundle;
 import roboguice.activity.RoboActivity;

@@ -10,15 +10,15 @@
 
     <application android:debuggable="true" android:icon="@drawable/zeitdata_mark" android:label="@string/app_name" android:theme="@android:style/Theme.NoTitleBar" >
 
-        <activity android:name="zeitdata.chart.sample.activity.ChartTypesActivity" android:label="@string/app_name"  >
+        <activity android:name="zeitdata.charts.sample.activity.ChartTypesActivity" android:label="@string/app_name"  >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
 
-        <activity android:name="zeitdata.chart.sample.activity.LineChartActivity" />
-        <activity android:name="zeitdata.chart.sample.activity.ScatterChartActivity" />
+        <activity android:name="zeitdata.charts.sample.activity.LineChartActivity" />
+        <activity android:name="zeitdata.charts.sample.activity.ScatterChartActivity" />
 
 
     </application>
