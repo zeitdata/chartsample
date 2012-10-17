@@ -1,5 +1,5 @@
 <resources>
-    <declare-styleable name="zeitdata.chart.view.XYChart">
+    <declare-styleable name="zeitdata.charts.view.XYChart">
         <attr name="axisColor" format="color"/>
         <attr name="backgroundColor" format="color"/>
         <attr name="chartLabel" format="string"/>
