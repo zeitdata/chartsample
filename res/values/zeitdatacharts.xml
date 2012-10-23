@@ -1,31 +1,24 @@
 <resources>
     <declare-styleable name="zeitdata.charts.view.XYChart">
-        <attr name="axisColor" format="color"/>
-        <attr name="backgroundColor" format="color"/>
         <attr name="chartLabel" format="string"/>
         <attr name="chartLabelColor" format="color"/>
-        <attr name="chartLabelFontSize" format="integer"/>
+        <attr name="chartLabelSize" format="integer"/>
         <attr name="gridLabelColor" format="color"/>
+        <attr name="gridLabelSize" format="integer"/>
+        <attr name="gridLabelTickLength" format="integer"/>
         <attr name="gridLineColor" format="color"/>
+        <attr name="gridLinesVisible" format="boolean"/>
+        <attr name="numericDataPrototype" format="string"/>
+        <attr name="xAxisColor" format="color"/>
         <attr name="xAxisLabel" format="string"/>
         <attr name="xAxisLabelColor" format="color"/>
-        <attr name="xAxisLabelFontSize" format="integer"/>
+        <attr name="xAxisLabelSize" format="integer"/>
+        <attr name="yAxisColor" format="color"/>
         <attr name="yAxisLabel" format="string"/>
         <attr name="yAxisLabelColor" format="color"/>
-        <attr name="yAxisLabelFontSize" format="integer"/>
-        <attr name="numericDataPrototype" format="string"/>
-
-        <attr name="gridColor" format="color"/>
-        <attr name="horizontalGridCount" format="integer"/>
-        <attr name="verticalGridCount" format="integer"/>
-        <attr name="gridWidth" format="integer"/>
-        <attr name="gridHeight" format="integer"/>
-        <attr name="gridStyle" format="enum">
-            <enum name="DOTTED" value="1"/>
-            <enum name="DASHED" value="2"/>
-            <enum name="SOLID" value="3"/>
-            <enum name="NONE" value="0"/>
-        </attr>
-
+        <attr name="yAxisLabelSize" format="integer"/>
+    </declare-styleable>
+    <declare-styleable name="zeitdata.charts.view.XYChart.series">
+        <attr name="symbolSize" format="float"/>
     </declare-styleable>
 </resources>
