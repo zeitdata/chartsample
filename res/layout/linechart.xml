@@ -3,7 +3,7 @@
 <LinearLayout
         android:id="@+id/scatterLayout"
         xmlns:android="http://schemas.android.com/apk/res/android"
-        xmlns:zeitdata="http://schemas.android.com/apk/res/zeitdata.chart.sample"
+        xmlns:zeitdata="http://schemas.android.com/apk/res/zeitdata.charts.sample"
         android:layout_width="fill_parent"
         android:layout_height="fill_parent"
         android:orientation="vertical">
@@ -37,7 +37,7 @@
             android:background="#20B2EB"/>
 
 
-    <zeitdata.chart.view.LineChart
+    <zeitdata.charts.view.LineChart
         android:id="@+id/lineChart"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"

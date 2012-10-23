@@ -7,7 +7,7 @@ import android.widget.ImageButton;
 import roboguice.activity.RoboActivity;
 import roboguice.inject.ContentView;
 import roboguice.inject.InjectView;
-import zeitdata.chart.sample.R;
+import zeitdata.charts.sample.R;
 
 @ContentView(R.layout.charttypes)
 public class ChartTypesActivity extends RoboActivity {

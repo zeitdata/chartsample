@@ -2,7 +2,7 @@
 
 <LinearLayout android:id="@+id/scatterLayout"
               xmlns:android="http://schemas.android.com/apk/res/android"
-              xmlns:zeitdata="http://schemas.android.com/apk/res/zeitdata.chart.sample"
+              xmlns:zeitdata="http://schemas.android.com/apk/res/zeitdata.charts.sample"
               android:layout_width="fill_parent"
               android:layout_height="fill_parent"
               android:background="#FFFFFF"
@@ -44,7 +44,7 @@
     -->
 
 
-    <zeitdata.chart.view.ScatterChart
+    <zeitdata.charts.view.ScatterChart
         android:id="@+id/lineChart"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
@@ -69,7 +69,7 @@
     />
 
 
-    <zeitdata.chart.view.ScatterChart
+    <zeitdata.charts.view.ScatterChart
             android:id="@+id/scatterChartDynamicData"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
