@@ -42,7 +42,7 @@ public class ScatterChartActivity extends RoboActivity{
 
         scatterLayout.addView(tv);
 
-//        scatterChartDynamicData.setNumericData(buildData());
+        scatterChartDynamicData.setNumericData(buildData());
 
 
 //        buildProgrammedChart(scatterLayout);
@@ -68,8 +68,8 @@ public class ScatterChartActivity extends RoboActivity{
     }
 
 
-    private NumericData buildData(){
-        NumericData data = new NumericData();
+//    private NumericData buildData(){
+//        NumericData data = new NumericData();
 
 //        List<NumericSeries> numericSeriesList = new ArrayList<NumericSeries>();
 //
@@ -110,7 +110,46 @@ public class ScatterChartActivity extends RoboActivity{
 //
 //        data.setSeries(numericSeriesList);
 
-        return data;
-    }
+//        return data;
+//    }
 
+    private NumericData buildData(){
+        NumericData.Builder dataBuilder = new NumericData.Builder();
+        List<NumericSeries> numericSeriesList = new ArrayList<NumericSeries>();
+        NumericSeries.Builder seriesBuilder = new NumericSeries.Builder();
+
+        seriesBuilder.withTitle("Unicorns");
+        seriesBuilder.withColor(Color.RED);
+
+        NumericPoint point01 = new NumericPoint.Builder(2006, 20).build();
+        NumericPoint point02 = new NumericPoint.Builder(2007, 35).build();
+        NumericPoint point03 = new NumericPoint.Builder(2008, 14).build();
+        NumericPoint point04 = new NumericPoint.Builder(2009, 90).build();
+        NumericPoint point05 = new NumericPoint.Builder(2010, 24).build();
+        NumericPoint point06 = new NumericPoint.Builder(2011, 21).build();
+        NumericPoint point07 = new NumericPoint.Builder(2012, 73).build();
+
+        seriesBuilder.addPoints(point01, point02, point03, point04, point05, point06, point07);
+
+        dataBuilder.addSeries(seriesBuilder.build());
+
+
+        seriesBuilder = new NumericSeries.Builder();
+        seriesBuilder.withColor(Color.GRAY);
+        seriesBuilder.withTitle("Leprechauns");
+
+        NumericPoint point11 = new NumericPoint.Builder(2006, 23).build();
+        NumericPoint point12 = new NumericPoint.Builder(2007, 100).build();
+        NumericPoint point13 = new NumericPoint.Builder(2008, 9).build();
+        NumericPoint point14 = new NumericPoint.Builder(2009, 8).build();
+        NumericPoint point15 = new NumericPoint.Builder(2010, 5).build();
+        NumericPoint point16 = new NumericPoint.Builder(2011, 33).build();
+        NumericPoint point17 = new NumericPoint.Builder(2012, 88).build();
+
+        seriesBuilder.addPoints(point11, point12, point12, point13, point14, point15, point16, point17);
+
+        dataBuilder.addSeries(seriesBuilder.build());
+
+        return dataBuilder.build();
+    }
 }
