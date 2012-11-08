@@ -2,9 +2,9 @@ package zeitdata.charts.sample.activity;
 
 import android.graphics.Color;
 import android.os.Bundle;
+import android.util.TimingLogger;
 import android.view.ViewGroup;
 import android.widget.LinearLayout;
-import android.widget.TextView;
 import roboguice.activity.RoboActivity;
 import roboguice.inject.ContentView;
 import roboguice.inject.InjectView;
@@ -14,8 +14,7 @@ import zeitdata.charts.model.NumericSeries;
 import zeitdata.charts.sample.R;
 import zeitdata.charts.view.ScatterChart;
 
-import java.util.ArrayList;
-import java.util.List;
+import java.util.Random;
 
 
 @ContentView(R.layout.scatterchart)
@@ -32,19 +31,16 @@ public class ScatterChartActivity extends RoboActivity{
 
     public void onCreate(Bundle savedInstanceState) {
 
+        TimingLogger timingLogger = new TimingLogger("ScatterChartActivity", "\n\n onCreate \n\n");
+
 
         super.onCreate(savedInstanceState);
 //        scatterChart.getChartLabel();
 //        scatterChart.setTmp();
 //
-        TextView tv = new TextView(this);
-        tv.setText("WTF????");
+        scatterChartDynamicData.setNumericData(buildRandomData(15));
 
-        scatterLayout.addView(tv);
-
-        scatterChartDynamicData.setNumericData(buildData());
-
-
+        timingLogger.dumpToLog();
 //        buildProgrammedChart(scatterLayout);
 
     }
@@ -62,7 +58,7 @@ public class ScatterChartActivity extends RoboActivity{
         programmedChart.setYAxisLabel("y-axis yyyy");
 
         programmedChart.setChartLabel("programmed!");
-        programmedChart.setNumericData(buildData());
+        programmedChart.setNumericData(buildStaticData());
 
         layout.addView(programmedChart);
     }
@@ -113,9 +109,8 @@ public class ScatterChartActivity extends RoboActivity{
 //        return data;
 //    }
 
-    private NumericData buildData(){
+    private NumericData buildStaticData(){
         NumericData.Builder dataBuilder = new NumericData.Builder();
-        List<NumericSeries> numericSeriesList = new ArrayList<NumericSeries>();
         NumericSeries.Builder seriesBuilder = new NumericSeries.Builder();
 
         seriesBuilder.withTitle("Unicorns");
@@ -148,8 +143,50 @@ public class ScatterChartActivity extends RoboActivity{
 
         seriesBuilder.addPoints(point11, point12, point12, point13, point14, point15, point16, point17);
 
+
         dataBuilder.addSeries(seriesBuilder.build());
 
         return dataBuilder.build();
+    }
+
+
+    private static double[][] buildRandomDataCos(int numberOfDataPoints){
+
+        double[][] xyPoints = new double[numberOfDataPoints][2];
+
+
+        for(int i = 0; i<xyPoints.length; i++){
+//            xyPoints[i][0] = Math.round(Math.random() * 100);
+            xyPoints[i][0] = i+1;
+//            xyPoints[i][1]= Math.cos(xyPoints[i][0]);
+            xyPoints[i][1] = (new Random().nextInt((i+1)*10) + 1) *(i+1);
+        }
+        return xyPoints;
+    }
+
+
+    private static NumericData buildRandomData(int numberOfDataPoints){
+        double[][] xyPoints = buildRandomDataCos(numberOfDataPoints);
+
+        NumericSeries.Builder seriesBuilder = new NumericSeries.Builder();
+
+        seriesBuilder.withTitle("Unicorns");
+        seriesBuilder.withColor(Color.RED);
+
+        for(int i = 0; i < xyPoints.length; i++){
+            seriesBuilder.addPoint(new NumericPoint.Builder(xyPoints[i][0], xyPoints[i][1]).build());
+        }
+
+        return new NumericData.Builder().addSeries(seriesBuilder.build()).build();
+
+    }
+
+    public static void main(String[] args){
+        double[][] result = ScatterChartActivity.buildRandomDataCos(10);
+        System.out.println("Result is : " + result);
+
+        NumericData data = buildRandomData(7);
+        System.out.println("NumericData is " + data);
+
     }
 }

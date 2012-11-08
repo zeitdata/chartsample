@@ -73,7 +73,7 @@
             android:gravity="center"
             android:clickable="true"
             android:cropToPadding="false"
-            android:src="@drawable/zdcharts_xyline_small"/>
+            android:src="@drawable/zdcharts_scatter_small"/>
 
     <TextView
             android:id="@+id/barChartLabel"
