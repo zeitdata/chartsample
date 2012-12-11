@@ -38,7 +38,7 @@ public class ScatterChartActivity extends RoboActivity{
 //        scatterChart.getChartLabel();
 //        scatterChart.setTmp();
 //
-        scatterChartDynamicData.setNumericData(buildRandomData(15));
+        scatterChartDynamicData.setData(buildRandomData(15));
 
         timingLogger.dumpToLog();
 //        buildProgrammedChart(scatterLayout);
@@ -58,7 +58,7 @@ public class ScatterChartActivity extends RoboActivity{
         programmedChart.setYAxisLabel("y-axis yyyy");
 
         programmedChart.setChartLabel("programmed!");
-        programmedChart.setNumericData(buildStaticData());
+        programmedChart.setData(buildStaticData());
 
         layout.addView(programmedChart);
     }
