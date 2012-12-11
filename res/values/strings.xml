@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="hello">Hello</string>
-    <string name="app_name">Charts New</string>
+    <string name="app_name">ZEITdata Charts Sample</string>
     <string name="logo">ZEITdata</string>
     <string name="email_address">Email Address</string>
-    <string name="registrationURL">http://beta.zeitdata.com/m/signup/email</string>
 </resources>
