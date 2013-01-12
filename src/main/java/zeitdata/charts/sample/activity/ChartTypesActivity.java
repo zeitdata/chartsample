@@ -18,12 +18,6 @@ public class ChartTypesActivity extends RoboActivity {
     @InjectView(R.id.scatterChartButton)
     private ImageButton scatterChartButton;
 
-    @InjectView(R.id.barChartButton)
-    private ImageButton barChartButton;
-
-    @InjectView(R.id.pieChartButton)
-    private ImageButton pieChartButton;
-
 
 
     public void onCreate(Bundle savedInstanceState) {
