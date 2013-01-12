@@ -1,16 +1,16 @@
 package zeitdata.charts.sample.webservice;
 
+import android.util.Log;
+
 import java.util.Calendar;
 import java.util.Random;
-
-import android.util.Log;
 
 
 public class SomeWebService {
 
 	
 	public SomeWebService() {
-		Log.d("com.acme", "SomeWebService constructor called");
+		Log.d("zeitdata.charts.sample.webserivce", "SomeWebService constructor called");
 	}
 	
 	
