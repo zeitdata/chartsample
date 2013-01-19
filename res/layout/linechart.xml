@@ -15,7 +15,7 @@
             android:contentDescription="zeitdata logo"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_gravity="center_horizontal"
+            android:layout_gravity="center"
             android:paddingTop="5dp"
             android:paddingBottom="0dp"
             android:paddingLeft="85dp"
@@ -35,7 +35,7 @@
             android:paddingLeft="0sp"
             android:paddingRight="90sp"
             android:textSize="14sp"
-            android:typeface="serif"
+            android:typeface="sans"
             android:background="#20B2EB"/>
 
      
@@ -55,14 +55,29 @@
     />
 
 
-
     <Button
-        android:id="@+id/backLineButton"
-        android:layout_height="wrap_content"
-        android:layout_width="wrap_content"
-        android:layout_gravity="center"
-        android:text="@string/back_home_button"/>
+            android:id="@+id/backLineButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center"
+            android:layout_marginTop="0dp"
+            android:background="@drawable/login_button_shape"
+            android:text="@string/back_home_button"
+            android:textColor="#FFFFFF"
+            android:textSize="14sp"
+            android:height="40dp"
+            android:width="160dp"
+    />
 
+    <TextView
+        android:id="@+id/testTextView"
+        android:text="ship it"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp"
+    />
 
     <!--
     <zeitdata.charts.view.LineChart
